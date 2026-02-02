@@ -1,4 +1,3 @@
-nltk.download('stopwords')
 import streamlit as st
 import pickle
 import re
@@ -10,7 +9,9 @@ import speech_recognition as sr
 from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
 
+# Download stopwords AFTER importing nltk
 nltk.download('stopwords')
+
 
 # =========================
 # Load Model + Vectorizer
